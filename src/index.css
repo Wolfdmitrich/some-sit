@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .glow-green { box-shadow: 0 0 20px rgba(0, 255, 65, 0.2); }
+  .glow-red { box-shadow: 0 0 20px rgba(255, 46, 46, 0.2); }
+  .text-glow-green { text-shadow: 0 0 10px rgba(0, 255, 65, 0.5); }
+  .scanline { 
+    background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.4) 51%); 
+    background-size: 100% 4px; 
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(0, 255, 65, 0.2);
+    border-radius: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 255, 65, 0.4);
+  }
+}
